@@ -1,16 +1,24 @@
+# 用于统一编辑器的排版
+# editorconfig.org
 root = true
 
 [*]
-charset = utf-8
-end_of_line = lf
-insert_final_newline = true
+
+# change these settings to your own preference
 indent_style = space
 indent_size = 4
+
+# we recommend you to keep these unchanged
+charset = utf-8
+end_of_line = lf
 trim_trailing_whitespace = true
+insert_final_newline = false
+
+
+[*.{js,html,blade.php,css,scss}]
+indent_style = space
+indent_size = 4
+
 
 [*.md]
 trim_trailing_whitespace = false
-
-[*.yml]
-indent_style = space
-indent_size = 2
