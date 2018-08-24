@@ -1,6 +1,7 @@
 <?php
 
 //Eloquent模型主要用于与数据表的交互（一个模型对应一张表，这叫做Active Record领域模型模式）
+//交互主要体现在CRUD方法上，例如可以用User::create()来创建一条记录（调用Tinker可以快速执行这些方法，其产生的结果与在PHP文件中运行是一样的）
 namespace App\Models;
 
 use Illuminate\Notifications\Notifiable;                //消息通知的功能
