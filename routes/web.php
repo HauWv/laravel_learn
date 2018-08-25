@@ -21,3 +21,8 @@ Route::get('signup','UsersController@create')->name('signup');
 //GET方法均请求页面，POST等方法用于数据处理
 //遵循RESTful规范
 Route::resource('users','UsersController');
+
+//会话控制
+Route::get('login','SessionsController@create')->name('login');
+Route::post('login','SessionsController@store')->name('login');
+Route::delete('logout','SessionsController@destroy')->name('logout');

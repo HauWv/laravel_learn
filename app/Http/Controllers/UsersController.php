@@ -57,6 +57,8 @@ class UsersController extends Controller
         //session()是一个全局方法，用来临时储存用户状态（因为HTTP协议本身无状态）
         //flash方法存储的数据，在下一次有效请求时即会失效
         //传入的为键值对，可以用全局session()->get('success'）取出
+
+        Auth::login($user);//注册成功后自动登陆
         session()->flash('success','欢迎，即将开始一段全新的旅程');
         return redirect()->route('users.show',[$user->id]);//这里也可以直接写$user,由于”约定优于配置“
     }

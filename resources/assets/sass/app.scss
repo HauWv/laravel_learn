@@ -64,6 +64,13 @@ p {
   }
 }
 
+#logout{
+  cursor:default;
+  &:hover{
+    backgroud-color:transparent;
+  }
+}
+
 /* footer */
 
 footer {
@@ -160,3 +167,4 @@ input{
 .panel{
   margin-top:50px;
 }
+
